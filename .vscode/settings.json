@@ -1,0 +1,25 @@
+{
+    "python.autoComplete.extraPaths": ["${workspaceFolder}"],
+    "python.analysis.extraPaths": ["${workspaceFolder}"],
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "terminal.integrated.env.linux": {"PYTHONPATH": "${workspaceFolder}"},
+    "terminal.integrated.profiles.windows": {
+        "GitBash": {
+            "path": [
+                "C:\\Git\\bin\\bash.exe"
+            ],
+            "env": {
+                "PATH": "${workspaceFolder}\\venv\\Scripts:${env:PATH}",
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "overrideName": true,
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "GitBash",
+    "python.terminal.activateEnvironment": false,
+    "hediet.vscode-drawio.theme": "Kennedy",
+    "workbench.editorAssociations": {
+        "*.svg": "hediet.vscode-drawio-text",
+    },
+}
