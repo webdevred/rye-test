@@ -2,7 +2,9 @@
 name = "rye-sample"
 version = "0.1.0"
 description = "Add your description here"
-dependencies = []
+dependencies = [
+    "numpy>=1.26.4",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -12,7 +14,10 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "jupyter>=1.0.0",
+    "pyinstaller>=6.4.0",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
