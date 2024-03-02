@@ -2,9 +2,24 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Sample Task",
+            "label": "Test rye-sample",
             "type": "shell",
-            "command": "echo hello world"
+            "command": "rye run python tests/test_rs.py"
+        },
+        {
+            "label": "Test rye-sample subcommand (hello)",
+            "type": "shell",
+            "command": "rye run python cli.py hello"
+        },
+        {
+            "label": "Test rye-sample subcommand (calc)",
+            "type": "shell",
+            "command": "rye run python cli.py calc"
+        },
+        {
+            "label": "Distrubute rye-sample.exe",
+            "type": "shell",
+            "command": "rye run pyinstaller rye-sample.spec"
         },
     ]
 }

@@ -1,23 +1,16 @@
 {
-    "python.autoComplete.extraPaths": ["${workspaceFolder}"],
-    "python.analysis.extraPaths": ["${workspaceFolder}"],
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "terminal.integrated.env.linux": {"PYTHONPATH": "${workspaceFolder}"},
+    "python.autoComplete.extraPaths": ["${workspaceFolder}/src"],
+    "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+    "jupyter.notebookFileRoot": "${workspaceFolder}/src",
     "terminal.integrated.profiles.windows": {
         "GitBash": {
-            "path": [
-                "C:\\Git\\bin\\bash.exe"
-            ],
-            "env": {
-                "PATH": "${workspaceFolder}\\venv\\Scripts:${env:PATH}",
-                "PYTHONPATH": "${workspaceFolder}"
-            },
+            "path": ["C:\\Git\\bin\\bash.exe"], // path to bash.exe included in Git For Windows
             "overrideName": true,
             "icon": "terminal-bash"
         }
     },
+    "python.terminal.activateEnvironment": true,
     "terminal.integrated.defaultProfile.windows": "GitBash",
-    "python.terminal.activateEnvironment": false,
     "hediet.vscode-drawio.theme": "Kennedy",
     "workbench.editorAssociations": {
         "*.svg": "hediet.vscode-drawio-text",
