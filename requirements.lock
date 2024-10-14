@@ -6,7 +6,11 @@
 #   features: []
 #   all-features: false
 #   with-sources: false
+#   generate-hashes: false
+#   universal: false
 
 -e file:.
 numpy==1.26.4
+    # via rye-sample
+ruff==0.6.9
     # via rye-sample

@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 dependencies = [
     "numpy>=1.26.4",
+    "ruff>=0.6.9",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -17,6 +18,7 @@ managed = true
 dev-dependencies = [
     "jupyter>=1.0.0",
     "pyinstaller>=6.4.0",
+    "pytest>=8.3.3",
 ]
 
 [tool.hatch.metadata]
